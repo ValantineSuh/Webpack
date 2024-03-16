@@ -4,9 +4,9 @@ Webpack is an open-source bundler for JavaScript applications. It is used in web
 
 This project, is a webpack used case, in which we make use of some webpack features such ass `loaders` and `plugins`.
 Some used `loaders` in this project include;
-- css-loader
-- babel-loader
-- svg-inline-loader
+## css-loader
+## babel-loader
+## svg-inline-loader
 
 
 # Installation & Usage
