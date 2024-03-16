@@ -1,6 +1,6 @@
 # Webpack
 
-Webpack is an open-source bundler for JavaScript applications. It is used in web developmet to bundle JavaScript files along other assets such ass CSS, fonts and images into single or multiple bundles for development in a web browser.
+Webpack is an open-source bundler for JavaScript applications. It is used in web development to bundle JavaScript files along other assets such ass CSS, fonts and images into single or multiple bundles for development in a web browser.
 
 This project, is a webpack used case, in which we make use of some webpack features such ass `loaders` and `plugins`.
 Some used `loaders` in this project include;
@@ -18,7 +18,7 @@ We can install webpack locally in our project directory using the following comm
 
 To begin, we start by navigating into our project directory.
 
- We install `nodejs` (if not already installed)
+ We then install `nodejs` (if not already installed)
 
 For MacOs
 
@@ -41,7 +41,7 @@ Further more, we initialise our webpack project using the command;
 ```bash
 npm init
 ```
-To some, it is preferable to add the `-y` flag to it, so as to skip the interactive promt hereby leading to quick project initialisation.
+To some, it is preferable to add the `-y` flag to it, so as to skip the interactive prompt hereby leading to quick project initialisation.
 ```bash
 npm init -y
 ```
@@ -56,8 +56,17 @@ Alternatively, the `yarn` package manager can be used to install webpack as well
 ```bash
 yarn add webpack webpack-cli --dev
 ```
+We then proceed by creating our `webpack.config.js` file, in this file. In this file, we would configure Webpack for our project. This file allows us to specify various options and optimise how Webpack bundles our project. 
+Some of the contents of this file are;
 
-We then proceed by installing the various `loaders`  and `plugin` used (as per our sample project) 
+## Entry point
+## Output configuration
+## Loaders Configuration
+## Plugins configuration
+## Mode configuration
+## DevServer Configuration
+
+After creating it, we proceed by installing the various `loaders`  and `plugin` used (as per our sample project) 
 ```bash
 npm install svg-inline-loader --save-dev
 npm install --save-dev css-loader stlye-loader
@@ -70,7 +79,8 @@ We install a `webpack-dev-server` as well. This package is a development server 
 ```bash
 npm install webpack-dev-server --save-dev
 ```
-
+Some modifications are also done in the `package.json`, under the `scripts` section.
+The added content, is used to build our project for production and typically starts the `webpack-dev-server`.
 
 After completing the above steps, and having the same code like that of our sample project
 ```bash 
